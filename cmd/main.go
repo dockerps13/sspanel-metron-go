@@ -2,8 +2,8 @@ package main
 
 import (
 	"log"
-	"sspanel-metron-go/config"
-	"sspanel-metron-go/routers"
+	"github.com/dockerps13/sspanel-metron-go/config"
+	"github.com/dockerps13/sspanel-metron-go/routers"
 )
 
 func main() {
