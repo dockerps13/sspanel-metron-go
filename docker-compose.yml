@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  sspanel-metron-go:
+    build: .
+    container_name: sspanel-metron-go
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config/config.yaml:/app/config.yaml
+    restart: unless-stopped
+    environment:
+      - GIN_MODE=release
